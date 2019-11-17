@@ -137,16 +137,19 @@
                                   styleClass="align-center"
                                   priority="1"/>
 
-                        <p:column headerText="Id" sortBy="#{car.id}" priority="1">
+                        <p:column headerText="Numeor" sortBy="#{car.id}" priority="1">
                             <h:outputText value="#{car.id}" />
                         </p:column>
-                        <p:column headerText="Year" priority="2">
+                        <p:column headerText="Bureau" priority="2">
                             <h:outputText value="#{car.year}" />
                         </p:column>
-                        <p:column headerText="Brand">
+                        <p:column headerText="Annee">
                             <h:outputText value="#{car.brand}"/>
                         </p:column>
-                        <p:column headerText="Color">
+                        <p:column headerText="Etat">
+                            <h:outputText value="#{car.color}"/>
+                        </p:column>
+                        <p:column headerText="Operateur">
                             <h:outputText value="#{car.color}"/>
                         </p:column>
                     </p:dataTable>

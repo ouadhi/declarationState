@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+
+		<property name="dialect">org.hibernate.dialect.InformixDialect</property>
+		<property name="hibernate.connection.driver_class">com.informix.jdbc.IfxDriver</property>
+		<property name="hibernate.connection.url">jdbc:informix-sqli://154.1.4.207:2000/base_zodiac:INFORMIXSERVER=ids_statis1;DELIMIDENT=y </property>
+		<property name="hibernate.connection.username">ouadhi</property>
+		<property name="hibernate.connection.password">esi2017</property>
+		<property name="connection_pool_size">1</property>
+		<property name="hbm2ddl.auto">update</property>
+		<property name="show_sql">true</property>
+		<property name="hibernate.connection.autocommit">true</property>
+	</session-factory>
+
+	<!-- <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property> 
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property> 
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:8889/Transfert</property> 
+		<property name="hibernate.connection.username">root</property> <property 
+		name="hibernate.connection.password">root</property> -->
+	
+
+</hibernate-configuration>
+
+
+
